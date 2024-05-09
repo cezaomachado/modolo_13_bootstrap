@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32X32" href="./imagens/favicon-32x32.png">
+    <title>EBACflix - Filmes e séries</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1><a href="#inicio">Oneflix</a></h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-center w-100" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link active">Ínicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#filmes-series" class="nav-link">Filmes/Séries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#perguntas-frequentes" class="nav-link">Perguntas Frequentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contato" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn btn-warning d-none d-lg-block" type="button" id="btn-notificacoes">
+                    <i class="bi bi-bell"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+        <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="inicio" class="p-0">
+                <div class="carousel carousel-fade slide" id="carousel-exemplo" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img src="./imagens/o-poderoso-chefao-1.jpg" alt="capa da serie breaking bad">
+                            <div class="carousel-caption">
+                                <h2>O Poderoso Chefão</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="./imagens/91-A_Lista_de_Schindler.jpg" alt="capa do filme gladiador">
+                            <div class="carousel-caption">
+                                <h2>A Lista de Schindler</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img src="./imagens/Um Sonho de Liberdade.webp" alt="capa da serie six feet under">
+                            <div class="carousel-caption">
+                                <h2>Um Sonho de Liberdade</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" type="button"></button>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide-to="1" type="button"></button>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide-to="2" type="button"></button>
+                    </div>
+                </div>
+            </section>
+            <section id="filmes-series">
+                <h2 class="mb-5">Filmes e Séries</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="./imagens/poderoso card.webp" alt="capa filme django livre">
+                            <div class="card-body">
+                                <h4 class="card-title">O Poderoso Chefão</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                </p>
+                                <ul class="d-flex p-0">
+                                    <li class="lista-de-botoes">
+                                        <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="./imagens/A Lista de Schindler card.jpg" alt="capa da serie the office">
+                            <div class="card-body">
+                                <h4 class="card-title">A Lista de Sheindler</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                </p>
+                                <ul class="d-flex p-0">
+                                    <li class="lista-de-botoes">
+                                        <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="./imagens/Um Sonho de Liberdade card.jpg" alt="capa da serie death note">
+                            <div class="card-body">
+                                <h4 class="card-title">Um Sonho de Liberdade</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                </p>
+                                <ul class="d-flex p-0">
+                                    <li class="lista-de-botoes">
+                                        <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="./imagens/ForrestGumpPoster card.jpg" alt="capa do filme pulp fiction">
+                            <div class="card-body">
+                                <h4 class="card-title">Forrest Gump</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                </p>
+                                <ul class="d-flex p-0">
+                                    <li class="lista-de-botoes">
+                                        <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="./imagens/O Rei Leão card.jpg" alt="capa da serie better caul saul">
+                            <div class="card-body">
+                                <h4 class="card-title">O Rei Leão</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                </p>
+                                <ul class="d-flex p-0">
+                                    <li class="lista-de-botoes">
+                                        <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card">
+                            <img src="./imagens/À Espera de um Milagre card.webp" alt="capa do filme bastardos inglorios">
+                            <div class="card-body">
+                                <h4 class="card-title">À Espera de um Milagre card</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                </p>
+                                <ul class="d-flex p-0">
+                                    <li class="lista-de-botoes">
+                                        <a href="#" id="botao-assistir" class="btn btn-primary">Assistir</a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-plus"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-x-circle"></i></a>
+                                    </li>
+                                    <li class="lista-de-botoes">
+                                        <a href="#" class="btn btn-dark"><i class="bi bi-heart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sobre">
+                <h2>Sobre</h2>
+                <nav class="nav nav-tabs mt-3">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active">O Poderoso Chefão</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link">A Lista de Schindler</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link">Um Sonho de Liberdade</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link">Forrest Gump</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba5" class="nav-link">O Rei Leão</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba6" class="nav-link">À Espera de um Milagre</button>
+                    <div class="tab-content p-3">
+                        <div id="aba1" class="tab-pane active">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, inventore debitis cum accusantium architecto nobis. Dolores quaerat odio atque numquam nostrum rerum quae, cupiditate excepturi sint? Dolores maxime repellendus harum?
+                        </div>
+                        <div id="aba2" class="tab-pane">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minima incidunt expedita possimus adipisci harum accusamus, ullam necessitatibus. Rerum aliquid repudiandae quis ab a. Sequi, aspernatur quis. Atque, voluptatibus tempore.
+                        </div>
+                        <div id="aba3" class="tab-pane">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a, reprehenderit, odio consequatur libero ab iusto quis necessitatibus at cum exercitationem illum vitae temporibus natus fugit quos, dicta commodi distinctio?
+                        </div>
+                        <div id="aba4" class="tab-pane">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio eaque eum quos dolor architecto dignissimos a rem maiores. Vel odit totam repellat quisquam quas obcaecati molestias nobis itaque amet!
+                        </div>
+                        <div id="aba5" class="tab-pane">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil est maiores molestias molestiae commodi minus tenetur doloremque asperiores error praesentium, at, quae explicabo quisquam excepturi rem adipisci quidem tempora?
+                        </div>
+                        <div id="aba6" class="tab-pane">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero corporis molestiae, quibusdam asperiores quos earum obcaecati iusto in nam? Sint voluptatibus quibusdam ratione porro quas minus inventore at ullam possimus.
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <section id="perguntas-frequentes">
+                <h2>Perguntas Frequentes</h2>
+                <div class="accordion mt-4">
+                    <div class="accordion-item mb-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                                Qual é o Melhor filme?
+                            </button>
+                        </div>
+                        <div class="accordion-collapse collapse show" id="resposta1">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptate eum assumenda fugiat praesentium neque, laboriosam deserunt cumque rerum quod, dicta deleniti voluptatum debitis quibusdam earum error? Perferendis, minus sed!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                                Qual é o Melhor filme?
+                            </button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="resposta2">
+                            <div class="accordion-body">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem iste dolor libero, modi quidem nostrum! Omnis, perspiciatis repellendus maxime cumque ex quo eveniet animi! Quod pariatur eligendi praesentium inventore?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta3">
+                                Qual é o Melhor filme?
+                            </button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="resposta3">
+                            <div class="accordion-body">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus natus molestias eius distinctio beatae mollitia explicabo eum? Cum, voluptate libero quisquam vel est aperiam alias optio perspiciatis, vero itaque odit.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-1">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta4">
+                                Qual é o Melhor filme?
+                            </button>
+                        </div>
+                        <div class="accordion-collapse collapse" id="resposta4">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatum repellendus consequatur sit maxime ipsam temporibus obcaecati, quasi fuga sapiente aut eveniet veniam molestiae voluptatem dolore qui ratione distinctio harum?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-8">
+                        <form class="mt-5">
+                            <div class="mb-2">
+                                <label for="nome" class="form-label">Seu nome:</label>
+                                <input type="text" class="form-control" id="nome">
+                            </div>
+                            <div class="mb-2">
+                                <label for="email" class="form-label">Seu email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-2">
+                                <label for="telefone" class="form-label">Seu telefone:</label>
+                                <input type="tel" class="form-control" id="telefone">
+                            </div>
+                            <div class="form-check form-switch m-2">
+                                <label for="checkbox" class="form-check-label">Li e concordo com todos os termos.</label>
+                                <input type="checkbox" class="form-check-input" id="checkbox">
+                                <div class="invalid-feedback">Você precisa concordar com os termos para enviar o formulário.</div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <button class="btn btn-primary d-none" type="button" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+
+    </button>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast" id="mensagens">
+            <header class="toast-header">
+                <strong>Notificações</strong>
+            </header>
+            <div class="toast-body">
+                Você não possui notificações.
+                <div class="mt-2 pt-2 border-top">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="toast">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; 2024 - Desenvolvido por <a href="https://github.com/cezaoamachado">Cesar Machado.</a>
+        </p>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./java.js"></script>
+</body>
+</html>
